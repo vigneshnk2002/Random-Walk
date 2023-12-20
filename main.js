@@ -1,4 +1,3 @@
-// The game board is an empty array of cells
 const gameBoard = {
     cells: [
         "", "", "",
@@ -72,19 +71,13 @@ function gameOver(winner) {
         (gameBoard.cells[0] === gameBoard.cells[4] === gameBoard.cells[8]) ||
         (gameBoard.cells[2] === gameBoard.cells[4] === gameBoard.cells[6])
     ) {
-        // code
+        // c
     }
 
     console.log("Congratulations!")
     console.log(winner.name + " is the winner!")
 }
 
-
-
-
-
-
-// Reload button functionality
 function reload() {
     const reload = document.querySelector('.reload');
     reload.addEventListener('click', () => {
